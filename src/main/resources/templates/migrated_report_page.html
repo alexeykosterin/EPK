@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.dataTables.js"></script>
+	<script src="../js/script.js"></script>
+	<link href="../css/table_style.css" rel="stylesheet" type="text/css">
+	<link href="../css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="/img/elk.svg" type="/image/svg+xml">
+    <meta charset="UTF-8">
+    <title>ЕПК BASIS</title>
+    
+	
+
+
+</head>
+<body>
+
+<div class="table-container">
+<table id="table_id" class="compact stripe hover" style="width:100%">
+  <thead>
+    <tr>
+    <tr>
+        <th>key</th>
+        <th>value</th>
+		<th>boolean</th>
+    </tr>
+    </tr>
+  </thead>
+    <tbody th:remove="all-but-first">
+    <tr th:each="rateplan : ${rateplanList}">
+        <td th:text="${rateplan.id}"></td>
+        <td th:text="${rateplan.name}"></td>
+		<td th:text="true"></td>
+   </tr>
+    </tbody>
+  <tfoot>
+  </tfoot>
+</table>
+</div>
+
+
+
+
+</body>
+</html>

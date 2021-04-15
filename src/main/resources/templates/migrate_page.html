@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rate plans</title>
+    <link href="css/order_style.css" rel="stylesheet">
+</head>
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <th:block th:each="Rateplans : ${rateplans}">
+        <tr>
+            <td th:text="${rateplans.name}"></td>
+        </tr>
+    </th:block>
+</table>
+<form action="/migrate/rateplans" method="post" th:object="${ratePlan}">
+    <input type="submit" value="Migarate RatePlans">
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "todo",
+      "type": "com.example.demo.config.RestClientProperties",
+      "sourceType": "com.example.demo.config.RestClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "todo.base-path",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.config.RestClientProperties"
+    },
+    {
+      "name": "todo.url",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.config.RestClientProperties"
+    }
+  ],
+  "hints": []
+}
